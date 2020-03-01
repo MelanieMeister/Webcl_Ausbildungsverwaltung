@@ -23,20 +23,6 @@ It contains the following modules/projects
 - shared: this one is totally optional. If used, it typically contains shared constants between client and server.
 - combined: combines all the above in one JVM for starting with the in-memory configuration for develop/test/debug.
 
-## Application introduction
-
-We implement a very simple CRUD application with a master view that contains all available entities and a detail view
-that contains  a simple header section and an editor area with three labels, two text fields to show the various binding options.
-
-  - The data will be read from and saved to a file
-  - 'Reset' is used to reset all modified attributes to their initial value (or the value that has been saved).
-  - 'Next' will show the next 'Person' in the list. 
-  - 'German' and 'English' are for multi-language support.
-
-'Save' and 'Reset' buttons are only enabled if there is really something to save/reset, i.e. at least one attribute value is dirty.
-The dirty state is also visualized via a CSS class (background color changes).
-
-The 'Name' field is marked as mandatory using a green border.
 
 ## Running the samples
 
