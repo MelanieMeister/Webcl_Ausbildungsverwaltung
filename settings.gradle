@@ -1,0 +1,6 @@
+include 'shared'
+include 'server'
+include 'server-app'
+include 'client'
+include 'combined'
+

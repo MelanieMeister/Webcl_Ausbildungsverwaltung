@@ -1,0 +1,39 @@
+.table-view{
+    -fx-background-color: transparent;
+    -fx-font-size: 10px;
+}
+
+.table-view:focused{
+    -fx-background-color: #EBEBF4 !important;
+    -fx-text-fill: black !important;
+
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: #CABFDD !important;
+    -fx-text-fill: black !important;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-cell{
+    -fx-max-height: 10px;
+}
+.list-cell {
+    -fx-cell-size:   30px;
+    -fx-line-height: 30px;
+}
+.table-row-cell {
+    -fx-cell-size:   30px;
+    -fx-line-height: 30px;
+}

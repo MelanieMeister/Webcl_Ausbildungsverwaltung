@@ -1,0 +1,16 @@
+apply plugin : 'war'
+apply from: 'gretty.plugin'
+
+dependencies {
+    compile project(':server')
+}
+
+war {
+    archiveName='myAppServer.war'
+}
+
+gretty {
+    contextPath = 'myApp'
+}
+
+

@@ -1,0 +1,20 @@
+dependencies {
+    compile project(':client')
+    compile project(':server')
+    compile "org.open-dolphin:dolphin-combined:$dolphinVersion"
+
+	testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
+	testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
+}
+
+test {
+	useJUnitPlatform()
+
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+
+	reports {
+		html.enabled = true
+	}
+}

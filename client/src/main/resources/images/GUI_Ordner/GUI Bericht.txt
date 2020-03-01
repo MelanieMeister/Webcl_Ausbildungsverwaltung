@@ -1,0 +1,41 @@
+Verpackungsbericht
+
+-----------------------------------------------------------------------------
+Dokument:
+Name: GUI.ai
+Farbmodus: RGB-Farbe
+Farbprofil: sRGB IEC61966-2.1
+Linealeinheit: Pixel
+Zeichenfläche: 1366 px x 768 px
+Bilder in Pfadansicht anzeigen: AUS
+Ersetzte Schriften hervorheben: AUS
+Ersetzte Symbole hervorheben: AUS
+Textbearbeitbarkeit beibehalten
+Farbiges Papier simulieren: AUS
+
+-----------------------------------------------------------------------------
+Volltonfarben-Objekte:
+
+-----------------------------------------------------------------------------
+Fehlende Schriften:OHNE
+
+-----------------------------------------------------------------------------
+Geschützte Schriften, die nicht verpackt wurden:OHNE
+
+-----------------------------------------------------------------------------
+Schriften:
+Arial Bold (OTF)
+Arial (OTF)
+Myriad Pro (OTF)
+
+-----------------------------------------------------------------------------
+Eingebettete Schriften:
+OHNE
+
+-----------------------------------------------------------------------------
+Fehlende Verknüpfungen:
+OHNE
+
+-----------------------------------------------------------------------------
+Verknüpfte Bilder:
+OHNE

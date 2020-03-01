@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'myapp.CombinedStarter' // in-memory
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+	maven {
+		url "https://ci.canoo.com/nexus/content/repositories/public-snapshots/"
+	}
+}
+
+compileJava {
+   options.encoding = "UTF-8"
+}
+
+subprojects {
+    apply plugin: 'java'
+	apply plugin: 'maven'
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
+    repositories {
+		mavenLocal()
+        mavenCentral()
+		maven {
+			url "https://ci.canoo.com/nexus/content/repositories/public-snapshots/"
+		}
+    }
+	sourceSets {
+	    main {
+	        resources {
+	            srcDirs = ["src/main/java", "src/main/resources"]
+	        }
+	    }
+	}
+}
+
+dependencies {
+    compile project(':combined')
+}
+
+

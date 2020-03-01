@@ -1,0 +1,545 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.rootPane {
+    -fx-padding : 10;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.heading {
+    -fx-font-family: 'Lato Light';
+    -fx-font-size: 72;
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, rgb(33, 33, 33) 0%, rgb(66, 66, 66) 100%);
+    -fx-text-fill: white;
+    -fx-max-height: 1024;
+    -fx-max-width: 1024;
+}
+
+.text-field.dirty{
+    -fx-background-color: papayawhip;
+}
+
+.text-field.dirty.mandatory{
+    -fx-background-color: #F97A7A;
+    -fx-background-insets: 0, 2;
+}
+
+.text-field.invalid {
+    -fx-text-fill: red;
+}
+
+.text-field.mandatory {
+    -fx-background-color: yellowgreen, white;
+    -fx-background-insets: 0, 2;
+}
+
+.check-box.dirty > .box {
+    -fx-text-fill: red;
+    -fx-background-color: papayawhip;
+}
+
+.icon {
+    -fx-font-family: 'FontAwesome';
+    -fx-font-size: 24;
+}
+
+
+#formular{
+    -fx-background-color: #D8D0D0;
+}
+#deleteMessageButton{
+    -fx-background-image: url(../icons/delete.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+
+}
+#printButton{
+    -fx-background-repeat: no-repeat;
+    -fx-pref-size: 15px;
+    -fx-min-size: 15px;
+    -fx-z-index: 10;
+    -fx-top: 20px;
+    -fx-background-color: transparent;
+    -fx-background-image: url(../icons/exportChart.png);
+}
+
+/**HeaderParts*/
+.tileHeaderPart{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-familiy: Lato;
+    -fx-text-fill: black;
+
+}
+
+.root-pane {
+    -fx-padding : 0;
+
+    -fx-pref-width: 800;
+}
+
+.spacer {
+    -fx-pref-width: 40;
+    -fx-min-width:  40;
+    -fx-max-width:  40;
+}
+
+.standard-toolbar {
+    -fx-background-color: -base-color;
+    -fx-padding: 4px;
+}
+
+.standard-toolbar .button {
+    -fx-border-color: null;
+    -fx-background-color: null;
+    -fx-background-radius: 2px;
+    -fx-font-size: 14px;
+}
+
+
+.standard-toolbar .button:hover {
+    -fx-background-color: -base-color;
+}
+
+
+.standard-toolbar .button .text {
+    -fx-font-size: 22px;
+    -fx-fill: white;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-cursor: hand;
+}
+
+.standard-toolbar .button .text:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.search-field {
+    -fx-background-radius: 16px;
+    -fx-font-size: 12px;
+}
+
+.search-field:focused {
+    -fx-focus-color: derive(-base-color, -30% );
+    -fx-faint-focus-color: rgba(255, 152, 0, 0.06);
+}
+
+.form {
+    -fx-padding : 25 25 25 0;
+    -fx-hgap: 0;
+    -fx-vgap: 25;
+    -fx-background-color: white;
+}
+
+.form .attribute-label {
+    -fx-pref-height: 30;
+    -fx-font-size: 14;
+    -fx-text-fill: derive(-base-color, -90%);
+}
+
+.form .mandatory-star, .form .dirty-indicator {
+   /* -fx-font-family: 'Font Awesome 5 Free Regular';*/
+    -fx-padding: 0 8 0 -4;
+    -fx-pref-height: 20;
+    -fx-min-width: 16;
+    -fx-max-width: 16;
+    -fx-alignment: center;
+    -fx-font-size: 7;
+    -fx-text-fill: -base-color;
+}
+
+.form .dirty-indicator {
+    -fx-padding: 0 0 0 0;
+}
+
+.table-cell.dirty-indicator{
+    /*-fx-font-family: 'Font Awesome 5 Free Regular';*/
+    -fx-font-size: 7;
+    -fx-padding: 0;
+    -fx-cell-size: 1em;
+    -fx-text-fill: -base-color;
+
+    -fx-alignment: center;
+}
+
+
+.heading {
+    -fx-font-size: 64;
+    -fx-padding: 20, 5, 20, 5;
+    -fx-background-color: rgb(40, 40, 40);
+    -fx-text-fill: -base-color;
+    -fx-max-height: 1024;
+    -fx-max-width: 1024;
+}
+
+.master {
+    -fx-background-color: white;
+}
+
+.detail {
+
+}
+
+.detail, .master {
+    -fx-border-color: -fx-box-border;
+}
+
+.icon {
+   /* -fx-font-family: 'Font Awesome 5 Free Regular';*/
+    -fx-font-size: 24;
+}
+
+.fontawesome .text {
+    -fx-font-family: "Arial";
+}
+
+.flaticon .text {
+    -fx-font-family: "Arial" ;
+}
+
+.table-view .filler, .table-view .column-header {
+    -fx-background-radius: 0;
+    -fx-border-color: #CABFDD;
+    -fx-border-width: 0 0 1 0;
+    -fx-prompt-text-fill: -base-color;
+    -fx-highlight-fill: #A389BD;
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-text-color;
+}
+
+.status {
+    -fx-spacing: 5;
+    -fx-padding: 0 0 0 10;
+}
+
+.status .text {
+    -fx-font-size: 12px;
+    -fx-fill: -heading-color;
+}
+
+.table-view {
+    -fx-table-header-border-color: #A389BD;
+    -fx-table-cell-border-color: #A389BD;
+    -fx-background-color:white;
+}
+
+.table-view .show-hide-columns-button {
+    -fx-background-color: #CABFDD;
+}
+
+.table-view .column-header .label, .table-view .filler .label, .table-view .column-drag-header .label {
+    -fx-alignment: baseline-left;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:hover, .table-row-cell:hover:focused {
+    -fx-background-color: -lightest-grey-color;
+}
+
+.table-row-cell:selected, .table-row-cell:selected:hover {
+    -fx-background-color: -light-grey;
+}
+
+.table-row-cell:selected:focused, .table-row-cell:selected:hover:focused {
+    -fx-background-color:#6D4F97;
+}
+
+.table-cell, .table-cell:even, .table-cell:odd {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-size: 16px;
+    -fx-padding: 8px 4px 8px 4px;
+    -fx-wrap-text: true;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow:hover {
+    -fx-background-color: -base-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow:hover {
+    -fx-background-color: -base-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-insets: 6 0 6 0;
+}
+
+.scroll-bar .thumb {
+    -fx-border-color: transparent;
+    -fx-background-color: lightgray;
+    -fx-background-insets: 2,0,0;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar .thumb:hover,  .scroll-bar .thumb:selected, .scroll-bar .thumb:focused{
+    -fx-background-color: -base-color-200;
+}
+
+.split-pane {
+    -fx-background-color: white;
+    -fx-padding: 10px;
+}
+
+.split-pane *.split-pane-divider,
+.split-pane *.vertical-grabber,
+.split-pane *.horizontal-grabber {
+    -fx-background-color: null;
+    -fx-border-color: null;
+    -fx-padding: 5px;
+}
+
+.scroll-pane, .list-view {
+    -fx-border-color: white;
+    -fx-background-color: white;
+}
+
+.corner {
+    -fx-background-color: transparent;
+}
+
+
+#deleteMessageButton{
+    -fx-background-image: url(../icons/delete.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+
+}
+#printButton{
+    -fx-background-repeat: no-repeat;
+    -fx-pref-size: 15px;
+    -fx-min-size: 15px;
+    -fx-z-index: 10;
+    -fx-top: 20px;
+    -fx-background-color: transparent;
+    -fx-background-image: url(../icons/exportChart.png);
+}
+
+/**HeaderParts*/
+.tileHeaderPart{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-familiy: Lato;
+    -fx-text-fill: black;
+
+}
+
+/*TopHeader*/
+#topHeader{
+    -fx-background-color: #CA0079;
+
+    -fx-padding: 4px;
+}
+
+.topLabel{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    /* -fx-background-color: green;*/
+
+}
+
+.topButtons{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-margin: 8px;
+    -fx-alignment: center;
+    -fx-start-margin: 20px;
+    -fx-text-alignment: center;
+    -fx-background-position: center;
+}
+
+#saveButton{
+    -fx-background-image: url(../icons/save.png);
+}
+#redoButton{
+    -fx-background-image: url(../icons/redo.png);
+}
+#undoButton{
+    -fx-background-image: url(../icons/undo.png);
+}
+#resetButton{
+    -fx-background-image: url(../icons/reset.png);
+}
+#resetButton{
+    -fx-background-image: url(../icons/reset.png);
+}
+#deleteEducationButton{
+    -fx-background-image: url(../icons/deleteEducation.png);
+}
+#duplicateButton{
+    -fx-background-image: url(../icons/duplicate.png);
+}
+#addEducationButton{
+    -fx-background-image: url(../icons/addEducation.png);
+}
+#chartButton{
+    -fx-background-image: url(../icons/chart.png);
+}
+#exportButton{
+    -fx-background-image: url(../icons/export.png);
+}
+#nextButton{
+    -fx-background-image: url(../icons/next.png);
+}
+#previousButton{
+    -fx-background-image: url(../icons/previous.png);
+}
+#reversButton{
+    -fx-background-image: url(../icons/faq.png);
+}
+
+/*employeeView*/
+.employeeField{
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 0.5px 0px;
+}
+
+.employeeViewField{
+    -fx-text-alignment: middle;
+}
+.organiserTextField{
+    -fx-font-style: italic;
+    -fx-background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.name{
+    -fx-font-weight: bold;
+}
+
+.title{
+    -fx-font-weight: bold;
+    -fx-font-size: 28 px;
+    -fx-text-alignment: middle;
+}
+
+/*PaymentView*/
+#newPayLabel{
+    -fx-font-weight: bold;
+}
+#addPayButton{
+    -fx-margin: 10 0 10 0;
+}
+/*ChartScene*/
+.checkBoxChart{
+    -fx-padding: 3px 3px 3px 3px;
+}
+
+/*SearchScene*/
+.searchTitle{
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+/*ParticipationView*/
+.total{
+    -fx-font-weight: bold;
+}
+#separator{
+    -fx-border-style: bold;
+    -fx-border-width: 5px;
+    -fx-padding: 5px;
+}
+.toggle-button:selected {
+    -fx-background: #CA0079;
+    -fx-base: #CA0079;
+    -fx-focus-color: #E4A5C8;
+    -fx-border-color: #E4A5C8;/*
+    -fx-text-fill: black;
+
+    -fx-effect: null;*/
+}
+.stateSupportToggleButton{
+    -f-font-size: 9px !important;
+    -fx-alignement: center;
+    -fx-text-alignment: center;
+}
+.toggle-button {
+    -fx-background: #F2CDE1;
+    -fx-base:  #F2CDE1;
+    -fx-focus-color: #E4A5C8;
+    -fx-border-color: #E4A5C8;/*
+
+     -fx-focus-color: transparent;
+     -fx-border-color: transparent;
+     -fx-effect: null;
+     -fx-text-fill: black;
+     -fx-base: transparent;*/
+}
+/*Charts*/
+.default-color0.chart-bar, .default-color0.chart-pie, .default-color0.chart-series-line{ -fx-stroke:        #6D4F97; -fx-pie-color:#6D4F97; -fx-bar-fill: #6D4F97;}
+.default-color1.chart-bar, .default-color1.chart-pie , .default-color1.chart-series-line{ -fx-stroke:       #00856B; -fx-pie-color:#00856B; -fx-bar-fill: #00856B;}
+.default-color2.chart-bar, .default-color2.chart-pie , .default-color2.chart-series-line{ -fx-stroke:       #006DB1; -fx-pie-color:#006DB1; -fx-bar-fill: #006DB1;}
+.default-color3.chart-bar, .default-color3.chart-pie , .default-color3.chart-series-line{ -fx-stroke:       #CA0079; -fx-pie-color:#CA0079; -fx-bar-fill: #CA0079;}
+.default-color4.chart-bar, .default-color4.chart-pie , .default-color4.chart-series-line{ -fx-stroke:       #A389BD; -fx-pie-color:#A389BD; -fx-bar-fill: #A389BD;}
+.default-color5.chart-bar, .default-color5.chart-pie , .default-color5.chart-series-line{ -fx-stroke:       #00955B; -fx-pie-color:#00955B; -fx-bar-fill: #00955B;}
+.default-color6.chart-bar, .default-color6.chart-pie , .default-color6.chart-series-line{ -fx-stroke:       #00AADA; -fx-pie-color:#00AADA; -fx-bar-fill: #00AADA;}
+.default-color7.chart-bar, .default-color7.chart-pie , .default-color7.chart-series-line{ -fx-stroke:       #CF609E; -fx-pie-color:#CF609E; -fx-bar-fill: #CF609E;}
+.default-color8.chart-bar, .default-color8.chart-pie , .default-color8.chart-series-line{ -fx-stroke:       #CABFDD; -fx-pie-color:#CABFDD; -fx-bar-fill: #CABFDD;}
+.default-color9.chart-bar, .default-color9.chart-pie , .default-color9.chart-series-line{ -fx-stroke:       #00A385; -fx-pie-color:#00A385; -fx-bar-fill: #00A385;}
+.default-color10.chart-bar,.default-color10.chart-pie, .default-color10.chart-series-line { -fx-stroke:     #52BCD3; -fx-pie-color: #52BCD3;  -fx-pie-color:#52BCD3;}
+.default-color11.chart-bar,.default-color11.chart-pie, .default-color11.chart-series-line { -fx-stroke:     #E4A5C8; -fx-pie-color: #E4A5C8;  -fx-pie-color:#E4A5C8;}
+.default-color12.chart-bar,.default-color12.chart-pie, .default-color12.chart-series-line { -fx-stroke:     #D6CFE4; -fx-pie-color: #D6CFE4;  -fx-pie-color:#D6CFE4;}
+.default-color13.chart-bar,.default-color13.chart-pie, .default-color13.chart-series-line { -fx-stroke:     #A5C854; -fx-pie-color: #A5C854;  -fx-pie-color:#A5C854;}
+.default-color14.chart-bar,.default-color14.chart-pie, .default-color14.chart-series-line { -fx-stroke:     #F2CDE1; -fx-pie-color: #F2CDE1;  -fx-pie-color:#F2CDE1;}
+.default-color15.chart-bar,.default-color15.chart-pie, .default-color15.chart-series-line { -fx-stroke:     #EBEBF4; -fx-pie-color: #EBEBF4;  -fx-pie-color:#EBEBF4;}
+.default-color16.chart-bar,.default-color16.chart-pie, .default-color16.chart-series-line { -fx-stroke:     #CFDF93; -fx-pie-color: #CFDF93;  -fx-pie-color:#CFDF93;}
+
+.default-color0.chart-line-symbol{  -fx-background-color: #6D4F97;}
+.default-color1.chart-line-symbol{  -fx-background-color: #00856B;}
+.default-color2.chart-line-symbol{  -fx-background-color: #006DB1;}
+.default-color3.chart-line-symbol{  -fx-background-color: #CA0079;}
+.default-color4.chart-line-symbol{  -fx-background-color: #A389BD;}
+.default-color5.chart-line-symbol{  -fx-background-color: #00955B;}
+.default-color6.chart-line-symbol{  -fx-background-color: #00AADA;}
+.default-color7.chart-line-symbol{  -fx-background-color: #CF609E;}
+.default-color8.chart-line-symbol{  -fx-background-color: #CABFDD;}
+.default-color9.chart-line-symbol{  -fx-background-color: #00A385;}
+.default-color10.chart-line-symbol{ -fx-background-color: #52BCD3;}
+.default-color11.chart-line-symbol{ -fx-background-color: #E4A5C8;}
+.default-color12.chart-line-symbol{ -fx-background-color: #D6CFE4;}
+.default-color13.chart-line-symbol{ -fx-background-color: #A5C854;}
+.default-color14.chart-line-symbol{ -fx-background-color: #F2CDE1;}
+.default-color15.chart-line-symbol{ -fx-background-color: #EBEBF4;}
+.default-color16.chart-line-symbol{ -fx-background-color: #CFDF93;}
