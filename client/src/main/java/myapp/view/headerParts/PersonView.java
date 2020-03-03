@@ -22,7 +22,7 @@ import static com.sun.org.apache.xml.internal.serialize.Method.TEXT;
 public class PersonView extends GridPane implements ViewMixin, PmMixin {
     // clientDolphin is the single entry point to the PresentationModel-Layer
     private final ClientDolphin clientDolphin;
-    private final ClientPresentationModel personProxy;
+    private final ClientPresentationModel educationProxy;
     private final ClientPresentationModel applicationState;
     /**
      * label with the title of this part of the view.
@@ -42,7 +42,7 @@ public class PersonView extends GridPane implements ViewMixin, PmMixin {
     public PersonView(ClientDolphin clientDolphin) {
         this.clientDolphin = clientDolphin;
         applicationState = getProxyPM(PMDescription.APPLICATION_STATE);
-        personProxy = getProxyPM(PMDescription.EDUCATION);
+        educationProxy = getProxyPM(PMDescription.EDUCATION);
         init();
     }
 
@@ -84,16 +84,16 @@ public class PersonView extends GridPane implements ViewMixin, PmMixin {
         //bind the value from the Model to the server, so that
         //the user is informed about all changes from the server
         JFXBinder.bind(EducationAtt.NAME.name())
-                .of(personProxy)
+                .of(educationProxy)
                 .to(TEXT)
                 .of(lastNameTextField);
 
         JFXBinder.bind(EducationAtt.FIRSTNAME.name())
-                .of(personProxy)
+                .of(educationProxy)
                 .to(TEXT)
                 .of(firstNameTextField);
         JFXBinder.bind(EducationAtt.PERSNR.name())
-                .of(personProxy)
+                .of(educationProxy)
                 .to(TEXT)
                 .of(numberTextField);
     }
@@ -103,15 +103,15 @@ public class PersonView extends GridPane implements ViewMixin, PmMixin {
         //listen to the name of the education: if it
         // change in the view, it will also changed in the model.
         lastNameTextField.textProperty().addListener((observable, oldValue, newValue) -> {
-            personProxy.getAt(EducationAtt.NAME.toString()).setValue(lastNameTextField.getText());
+            educationProxy.getAt(EducationAtt.NAME.toString()).setValue(lastNameTextField.getText());
         });
 
         firstNameTextField.textProperty().addListener((observable, oldValue, newValue) -> {
-            personProxy.getAt(EducationAtt.FIRSTNAME.toString()).setValue(firstNameTextField.getText());
+            educationProxy.getAt(EducationAtt.FIRSTNAME.toString()).setValue(firstNameTextField.getText());
         });
 
         numberTextField.textProperty().addListener((observable, oldValue, newValue) -> {
-            personProxy.getAt(EducationAtt.PERSNR.toString()).setValue(numberTextField.getText());
+            educationProxy.getAt(EducationAtt.PERSNR.toString()).setValue(numberTextField.getText());
         });
     }
 

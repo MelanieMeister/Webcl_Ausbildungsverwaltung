@@ -34,7 +34,7 @@ public class Toolbar extends BorderPane implements ViewMixin, PmMixin {
 
     private Button saveButton,
             deleteButton,  addButton,
-    nextButton,previousButton;
+            nextButton,previousButton;
 
     private ComboBox languageBox;
     private Label saveLabel;
@@ -97,9 +97,8 @@ public class Toolbar extends BorderPane implements ViewMixin, PmMixin {
 
         hBoxLeft.add(getVBox(addButton, addLabel, "Neue Weiterbildung erfassen"), 0, 0, 1, 2);
         hBoxLeft.add(getVBox(saveButton, saveLabel, "Änderungen speichern"), 1, 0, 1, 2);
-        hBoxLeft.add(getVBox(deleteButton, deleteLabel, "Weiterbildung löschen"), 2, 0, 1, 2);
-        hBoxLeft.add(getVBox(previousButton, previousLabel, "Zur nächsten Weiterbildug"), 3, 0, 1, 2);
-        hBoxLeft.add(getVBox(nextButton, nextLabel, "Zur vorherigen Weiterbildug"), 4, 0, 1, 2);
+        hBoxLeft.add(getVBox(previousButton, previousLabel, "Zur nächsten Weiterbildug"), 2, 0, 1, 2);
+        hBoxLeft.add(getVBox(nextButton, nextLabel, "Zur vorherigen Weiterbildug"), 3, 0, 1, 2);
 
         setLeft(hBoxLeft);
     }

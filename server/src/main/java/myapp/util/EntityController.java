@@ -259,10 +259,16 @@ public abstract class EntityController extends Controller {
     }
 
 
+    /**
+     * update/save/delete all models.
+     */
     public synchronized void saveOnUserRequest() {
         pauseBroadCasting();
 
+        //get all models which need an update
         List<DTO> dtos = dirtyDTOs(pmDetailDescription);
+        //save, update or delete all new models, the models
+        // which must be deleted and the dirtyDTOs
         service.update(dtos, CREATED_PMS, DELETED_PMS);
 
         rebase();
@@ -274,6 +280,10 @@ public abstract class EntityController extends Controller {
 
         resumeBroadCasting();
 
+        /**
+         * save the data in all models which have a connection
+         * to the eventBus and inform that all are deleted, saved or updated.
+         */
         publish(SAVED);
     }
 
